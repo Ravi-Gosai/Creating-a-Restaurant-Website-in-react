@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import Modal from '../UI/Modal';
 import classes from './Cart.module.css';
 import CartContext from '../../store/cart-context';
+import CartItem from './CartItem';
 
 const Cart = props =>{
 
@@ -9,7 +10,8 @@ const Cart = props =>{
 
     const cartItem = (<ul className={classes['cart-items']}>
         {cartContext.items.map((item)=>{
-        return <li key={item.id}>{item.name}</li>
+            console.log(item)
+        return <CartItem key={item.id} item={item}></CartItem>
     })}</ul>)
 
     return<Modal onClose={props.onClose}>
