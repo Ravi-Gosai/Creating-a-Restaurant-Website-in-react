@@ -8,8 +8,9 @@ const CartItem = (props) => {
       <li key={props.item.id}>
         {" "}
         {`${props.item.name}    x ${props.item.amount}`}
-        <button>+</button>
+        <button onClick={()=>{cartContext.increment(props.item)}}>+</button>
         <button onClick={()=>{cartContext.decrement(props.item)}}>-</button>
+        {props.item.price}
       </li>
     </>
   );

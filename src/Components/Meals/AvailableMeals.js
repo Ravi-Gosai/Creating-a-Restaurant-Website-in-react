@@ -4,28 +4,28 @@ import MealItem from './MealItem/MealItem';
 const DUMMY_MEALS = [
     {
       id: 'm1',
-      name: 'Sushi',
-      description: 'Finest fish and veggies',
+      name: 'gujrati thali',
+      description: '2 gujrati sabji, 5 roti, 1 buttermilk ',
       price: 22.99,
       amount :1
     },
     {
       id: 'm2',
-      name: 'Schnitzel',
-      description: 'A german specialty!',
+      name: 'panjabi thali',
+      description: '2 panner sabji , 1butter roti , 1 buttermilk',
       price: 16.5,
       amount :1
     },
     {
       id: 'm3',
-      name: 'Barbecue Burger',
-      description: 'American, raw, meaty',
+      name: 'grand panjabi thali',
+      description: '4 panner sabji , 1butter roti , 1 buttermilk',
       price: 12.99,
       amount :1
     },
     {
       id: 'm4',
-      name: 'Green Bowl',
+      name: 'dal chawal',
       description: 'Healthy...and green...',
       price: 18.99,
       amount :1

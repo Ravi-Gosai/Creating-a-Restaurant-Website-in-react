@@ -35,7 +35,13 @@ const CartProvider = (props)=>{
 
     }
     const incremenHandler = (cartMeal)=>{
-        
+        setItems(()=>{
+            const currItemList = [...items]
+            const index = items.findIndex((item)=>item.id === cartMeal.id)
+            currItemList[index].amount = currItemList[index].amount +1;
+            return currItemList
+
+        })
     
     }
     const decrementHandler = (cartMeal)=>{
